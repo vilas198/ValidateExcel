@@ -91,14 +91,14 @@ if __name__=="__main__":
 
         #Reading AWS configuration
         aws_id,aws_secret,bucket_name,object_key,status=RC.readAWS_Config()
-        #print("reading status form aws")
-        #print(status)
+        print("reading status form aws")
+        print(status)
         if status==0:
             print("Error while Reading aws configuration from service")
             logging.debug("Error while Reading aws configuration from service")
             aws_id, aws_secret, bucket_name, object_key = ReadAWSconfig()
 
-        #print(aws_id,aws_secret,bucket_name,object_key,status)
+        print(aws_id,aws_secret,bucket_name,object_key,status)
 
 
         # Downloading Excel from AWS

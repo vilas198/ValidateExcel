@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 app.config["DEBUG"] = True
 conf = ConfigParser()
-conf.read('setting.ini')
+conf.read('.\Config\setting.ini')
 @app.route('/', methods=['GET'])
 def home():
     return '''<h1>Distant Reading Archive</h1>

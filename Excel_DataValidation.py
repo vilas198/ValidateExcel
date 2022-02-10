@@ -13,7 +13,7 @@ logging.basicConfig(filename=".\Logs\logger.log",
                     format='%(asctime)s - %(name)s - %(threadName)s -  %(levelname)s - %(message)s'
                     )
 
-data=np.arange(0,100)
+data=np.arange(0,105)
 # read aws configurartion from init file
 def ReadAWSconfig():
     try:

@@ -25,10 +25,8 @@ class awsoperations:
         """
         if object_name is None:
             object_name = file_name
-        else:
-            object_name = object_name
         # Upload the file
-        s3_client  = boto3.client('s3', aws_access_key_id=self.aws_id, aws_secret_access_key=self.aws_secret)
+        s3_client = boto3.client('s3', aws_access_key_id=self.aws_id, aws_secret_access_key=self.aws_secret)
         try:
 
             #print(self.aws_id, self.aws_secret, self.bucket_name, file_name,object_name)
